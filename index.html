@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Esercitazioni di traduzione</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,500;0,700;1,400&family=Source+Sans+3:wght@400;500;700&display=swap">
+<style>
+:root {
+  --font-text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-ui: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --paper: #f1f2f6;
+  --surface: #ffffff;
+  --ink: #1b2236;
+  --muted: #5a6379;
+  --line: #d3d8e4;
+  --lapis: #2a4699;
+  --lapis-soft: #dde5f8;
+  --on-lapis: #ffffff;
+  --ok: #24705e;
+  --ok-soft: #d8eee7;
+  --err: #a8322a;
+  --err-soft: #f6dcd8;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #12151f;
+    --surface: #1a1f2d;
+    --ink: #e8ebf4;
+    --muted: #9ba4ba;
+    --line: #2d3449;
+    --lapis: #93abf2;
+    --lapis-soft: #26325c;
+    --on-lapis: #101832;
+    --ok: #5fc4a6;
+    --ok-soft: #173429;
+    --err: #f28b81;
+    --err-soft: #40201d;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #12151f;
+  --surface: #1a1f2d;
+  --ink: #e8ebf4;
+  --muted: #9ba4ba;
+  --line: #2d3449;
+  --lapis: #93abf2;
+  --lapis-soft: #26325c;
+  --on-lapis: #101832;
+  --ok: #5fc4a6;
+  --ok-soft: #173429;
+  --err: #f28b81;
+  --err-soft: #40201d;
+  color-scheme: dark;
+}
+
+
+[hidden] { display: none !important; }
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font-ui); font-size: 16px; line-height: 1.45; }
+.wrap { max-width: 720px; margin: 0 auto; padding-inline: 16px; padding-block: 40px 56px; }
+h1 { font-family: var(--font-text); font-weight: 700; font-size: clamp(1.7rem, 1.2rem + 2vw, 2.4rem); line-height: 1.15; margin: 0 0 10px; text-wrap: balance; }
+.lead { margin: 0 0 28px; max-width: 58ch; color: var(--muted); font-size: 1.08rem; }
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.card { display: grid; gap: 4px; padding: 16px 18px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; color: inherit; text-decoration: none; }
+.card:hover { border-color: var(--lapis); }
+.card:focus-visible { outline: 3px solid var(--lapis); outline-offset: 2px; }
+.lang { font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+.verse { font-family: var(--font-text); font-size: clamp(1.25rem, 1rem + 1.2vw, 1.6rem); line-height: 1.3; overflow-wrap: anywhere; }
+.meta { color: var(--muted); font-variant-numeric: tabular-nums; }
+.card:hover .verse { color: var(--lapis); }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Esercitazioni di traduzione</h1>
+  <p class="lead">Associa ogni parola del testo medievale al termine italiano del glossario. Scegli un testo.</p>
+  <ul class="list">
+    <li><a class="card" href="oil.html">
+      <span class="lang">Lingua d’oïl</span>
+      <span class="verse">Ce fu au tans qu’arbre florissent</span>
+      <span class="meta">5 versi · 20 parole</span>
+    </a></li>
+    <li><a class="card" href="oc.html">
+      <span class="lang">Lingua d’oc</span>
+      <span class="verse">Ab la dolchor del temps novel</span>
+      <span class="meta">6 versi · 25 parole</span>
+    </a></li>
+  </ul>
+</main>
+</body>
+</html>
